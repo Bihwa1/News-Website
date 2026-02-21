@@ -128,7 +128,7 @@ p{
 
 .home-page-container-photos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 10px;
     gap: 10px ;
 
@@ -141,15 +141,19 @@ p{
 
 }
 
-
-
+.home-page-content img{
+    width: 100%;
+    height: 300px;        /* fixed visible height */
+    object-fit: cover;    /* prevents stretching */
+    display: block;
+}
 
 .home-page-italic{
     font-size: 20px;
 }
 
 
-/*         CORE NEWS                     */
+/*         GENERAL CONTENT FOR THE SEPARATE PAGES, EXCEPT FOR THE HOMEPAGE                    */
 
 .general-container{
     display: grid;
